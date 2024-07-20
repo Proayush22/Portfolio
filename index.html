@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Sinha - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" href="#popup">
+          <img src="./assets/images/headshot.jpeg" alt="Ayush Sinha" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ayush Sinha">Ayush Sinha</h1>
+
+          
+          <p class="title">I'm <span class="static-title"></span></p>
+
+          <style>
+            .static-title {
+              margin-left: 3.25px;
+            }
+          </style>
+
+          <script src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+          <script>
+            var typed = new Typed('.static-title', {
+              strings: [" a Student", " a Researcher", " a Developer"],
+              typeSpeed: 100,
+              backSpeed: 100,
+              loop: false
+            });
+          </script>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email (Buisness)</p>
+
+              <a href="mailto:asinha@cloudcores.org" class="contact-link">asinha@cloudcores.org</a>
+
+              <p class="contact-title"><br>Email (Personal)</p>
+
+              <a href="mailto:sinhaayush203@gmail.com" class="contact-link">sinhaayush203@gmail.com</a>
+
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+18482440780" class="contact-link">+1 (848) 244-0780</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">Dec 22, 2006</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dayton, New Jersey, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Proayush22" class="social-link">
+              <img src="./assets/images/github-icon.svg
+                " alt="Github" height="24">
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://open.spotify.com/user/e187imbz6qftt6l7gsukj1k1o?si=69c3746271614d47" class="social-link">
+              <img src="./assets/images/spotify-icon.svg
+                " alt="Spotify" height="20" width="20">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ayush-si-nha/" class="social-link">
+              <img src="./assets/images/LinkedIn_icon.svg" alt="Linkedin" height="20" width="20">
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/ayush.sin.22/" class="social-link">
+              <img src="./assets/images/insta-icon.svg" alt="Instagram" height="20" width="20"> 
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Computer Sceince Student from Dayton, New Jersey, reserching in XR Technologies and Data Science/Machine Learning.
+            I also have experience with game design (Unity), App Developemnt (Flutter & Android Studio) and Web Development (HTML, CSS, JS).
+          </p>
+
+          <p>
+            I am the founder of a software development startup, CloudCores, where we create projects and help clients with a significant 
+            impact on our community. We develop websites that are functional, user-friendly, and visually appealing. We also design mobile 
+            applications that are easy to use and have a clean interface. Our goal is to create an equitable future for all companies.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/vr-glasses.png
+                " alt="design icon" width="50">
+                
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">VR/AR Development</h4>
+
+                <p class="service-item-text">
+                  Advanced Unity knowledge and experience in Unity XR Development.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/webdev.png" alt="Web development icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/smartphone.png" alt="mobile app icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications in iOS and Android
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/artificial-intellegence (1).png" alt="camera icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  Data Science and Machine Learning Researcher and Project Lead
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!--
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        <!--
+          Awards
+        
+
+        <section class="awards">
+            
+            <h3 class="h3 awards-title">Awards</h3>
+  
+            <ul class="awards-list">
+  
+              <li class="awards-item">
+                <div class="awards-icon-box">
+                  <ion-icon name="medal-outline"></ion-icon>
+                </div>
+  
+                <div class="awards-content-box">
+                  <h4 class="h4 awards-item-title">Best Developer</h4>
+  
+                  <p class="awards-item-text">
+                    Awarded the Best Developer in the 2024 NJIT HSSRI Program
+                  </p>
+                </div>
+              </li>
+  
+              <li class="awards-item">
+                <div class="awards-icon-box">
+                  <ion-icon name="medal-outline"></ion-icon>
+                </div>
+  
+                <div class="awards-content-box">
+                  <h4 class="h4 awards-item-title">Best Researcher</h4>
+  
+                  <p class="awards-item-text">
+                    Awarded the Best Researcher in the 2024 NJIT HSSRI Program
+                  </p>
+                </div>
+              </li>
+  
+              <li class="awards-item">
+                <div class="awards-icon-box">
+                  <ion-icon name="medal-outline"></ion-icon>
+                </div>
+  
+                <div class="awards-content-box">
+                  <h4 class="h4 awards-item-title">Best Student</h4>
+  
+                  <p class="awards-item-text">
+                    Awarded the Best Student in the 2024 NJIT HSSRI Program
+                  </p>
+                </div>
+              </li>
+  
+            </ul>
+        </section>
+
+        -->
+        
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Companies</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://cloudcores.org/" target="_blank" class="clients-link"">
+                <img src="./assets/images/transcloudcores.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://research.njit.edu/" target="_blank">
+                <img src="./assets/images/njit.png" alt="client logo">
+              </a>
+            </li>
+            <!--
+            <li class="clients-item">
+              <a href="https://www.researchwithrutgers.com/">
+                <img src="./assets/images/ruttys.png" alt="client logo">
+              </a>
+            </li>
+            -->
+            <li class="clients-item">
+              <a href="https://www.iwanciw.com/">
+                <img src="./assets/images/iwanciw.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.ussoccer.com/">
+                <img src="./assets/images/ussoccer.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.myflevel.com/US/center/plainsboro">
+                <img src="./assets/images/eyelevel.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">South Brunswick High School</h4>
+
+              <span>2021 - 2025</span>
+
+              <p class="timeline-text">
+                <!--
+                <b>GPA:</b> W 4.28/4.0, UW 3.74/4.0 <br>
+              -->
+                <b>Participated </b>in National Honors Society, Winter and Spring Varsity Track & Field, JSA VLA Rep, CS Academy, FBLA, and Computer Science Club <br>
+                <b>Relevant Coursework: </b>AP Computer Science A, AP Calculus AB/BC, AP Chemistry, Mobile Application Development, Virtual Reality and Game Design, AP Physics C, AP Statistics, AP Macroeconomics, Data Structures & Algorithms, CS Academy Capstone, AP Psychology
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">CloudCores - CTO/Co-Founder</h4>
+
+              <span>2024 - Present</span>
+
+              <p class="timeline-text">
+                Created CloudCores, a software development startup with 100+ interns and 10k+ revenue dedicated to creating projects and helping clients with a significant impact on our community. Whether we're innovating with pro bono projects or helping professors and college students with research, we’re creating an equitable future.              
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Apex Games - Lead Game/Blockchain Developemnt Intern</h4>
+
+              <span>June 2023 - August 2023</span>
+
+              <p class="timeline-text">
+                Selected as a Lead Game Developer Intern for the company on an equity basis, where I worked on implementing blockchain, NFT, and multiplayer features in Unity to create a more immersive and enjoyable experience for users and promote cryptocurrency. Created APEX token, a coin made specificailly for the companies game. 
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sports Referee - NJ</h4>
+
+              <span>Janruary 2024 - Present</span>
+
+              <p class="timeline-text">
+                Sports professional, work at the grassroots level to officiate youth soccer games as a main and assistant referee. Obtained a U.S. Soccer referee license by completing a full NJ referee course for the 2024 calendar year.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Iwanciw Functional Funware - React Intern</h4>
+
+              <span>June 2023 - August 2023</span>
+
+              <p class="timeline-text">
+                Updated the companies SYCE (See your Color expereince) project to create it in Unity and React where I created a 3D model of the company's product and implemented a color changing feature. Created a VR experience for the company's product using Unity and Oculus Quest 2. The React version of the product is implemented on the company's website for public use. 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Eye Level Instructor - Plainsboro, NJ</h4>
+
+              <span>May 2023 - Nov 2023</span>
+
+              <p class="timeline-text">
+                Worked over 100 hours as an Instructor who taught children essential Math, English, and
+                Critical Thinking concepts. Created customized lesson plans and actively adapted them to each
+                child’s needs.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="medal-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Awards / Honors / Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Economics/Machine Learning Indpendent Research</h4>
+
+              <span>July 2024</span>
+
+              <p class="timeline-text">
+                The project aims to conduct an in-depth economic analysis of impoverished districts in New Jersey using census data and advanced machine learning techniques to prove correlation with demographic features. The goal is to identify key socio-economic factors contributing to poverty, predict future trends, and provide actionable insights for policymakers to develop targeted interventions.              
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Indpendent Research in Optimizing</h4>
+
+              <span>July 2024</span>
+
+              <p class="timeline-text">
+                Stock Market Optimizing.
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The Global Health Leaders Conference at Johns Hopkins University</h4>
+
+              <span>July 2024</span>
+
+              <p class="timeline-text">
+                Participant in a competitive Johns Hopkins program (9.3% Official Acceptance Rate) with students from all around the world, The Global Health Leaders Conference, where I attended a series of events with other students and researchers/professors in the industry.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3x JSA Best Speaker Award, 2023 Winter Congress Bill Passed Award</h4>
+
+              <span>2021 - 2025</span>
+
+              <p class="timeline-text">
+                Nominated Best Speaker three times throughout my high school JSA career at international and reigional/state level JSA debate competitions. Successfully passed a bill through a each round of a mock Congress by speaking in front of each house and commitee.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PVSA Gold (Presidential Volunteer Service Award)</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Volunteered over 250 hours at certified non-profit organizations
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AP Scholar with Distinction</h4>
+
+              <span>July 2024</span>
+
+              <p class="timeline-text">
+                Scored over a 3.25 average across over 5 AP Exams
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Honors Society / CS Academy / Computer Science Honors Society?</h4>
+
+              <span>June 2025</span>
+
+              <p class="timeline-text">
+                Selected for National Honors Society by showing outstanding leadership, serivce and academics. Selected for CS Academy and Computer Science Honors Society by demonstrating advanced computer science knowledge and a drive to learn.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Volunteer / Programs</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">JSA MAS Gubernatorial Director of Technology</h4>
+
+              <span>July 2024 - Present</span>
+
+              <p class="timeline-text">
+                Junior State of America (JSA) is an organized debate club consisting of debates at the school, regional, state, and national levels. Managed the virtual platform by developing a robust web application and documenting event photos as Director of Technology for the Gubernatorial Cabinet on JSA's Mid-Atlantic State level. Created a new app, JSApp for the MAS region, which is a mobile application that has allowed over 2000 students to access all JSA events and information in one place.
+
+              </p>
+
+            </li>
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NJIT Researcher (HSSRI Program) - iXR Lab</h4>
+
+              <span>June 2024 - July 2024</span>
+
+              <p class="timeline-text">
+                Participated in a competitive high school summer research program under Professor Vinnikov, researching XR technology and object identification. Created an application in Unity using AR technology that recognizes specific tools and uses a 3D Scanner to scan the user's area and creates a model. 
+
+              </p>
+
+            </li>
+
+            <!--
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rutgers University Data Science Researcher - New Brunswick, NJ</h4>
+
+              <span>June 2023 - August 2023</span>
+
+              <p class="timeline-text">
+                Worked under Professor Govindasamy (Chair of Food, Resource and Agricultural Economics) to process economic data about food security issues in Micronesia. Used Data Science and Statistics techniques to analyze the data and create a logistic regression model with economometrics that predicts future food security issues in Micronesia.
+              </p>
+
+            </li>
+
+            -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Code4Tomorrow - Machine Learning Lead (Non-Profit)</h4>
+
+              <span>April 2023 - Present</span>
+
+              <p class="timeline-text">
+                Lead of the Machine Learning Classes department; manage members of the Machine Learning team and offer insight on additions to course content. Contributed to the machine learning course content and taught Intermediate Java and Web development classes during the summer.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SBPL TVA Member - South Brunswick Public Library</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+                Member of the Teen Volunteer Association which created ideas for events at the library, and volunteered at functions in the library—thought of effective strategies to promote and advertise events and clubs.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mobile App Development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile Apps</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile Apps</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Concept Laptop</h3>
+
+                <p class="project-category">Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cldcrs.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cloud Cores</h3>
+
+                <p class="project-category">Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Music Party App</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CollegeCo</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Laser Tag</h3>
+
+                <p class="project-category">Virtual Reality</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Multi-Brawl</h3>
+
+                <p class="project-category">Multiplayer Game</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weather App</h3>
+
+                <p class="project-category">Mobile Apps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="games">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fruit Ninja VR</h3>
+
+                <p class="project-category">Virtual Reality</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Calculator App</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Oreo Clicker</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Location App</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="webscrape.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/webscrape.png" alt="How to Webscrape Data in Python" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Code</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-06-25">Jun 25, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">How to Web Scrape Data using Python</h3>
+
+                  <p class="blog-text">
+                    Simple web scraping tutorial using Python and BeautifulSoup.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="laptops.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/laptop.avif" alt="The Best Laptops for Software Development" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Technology</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-06-15">Jun 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The Best Laptops for Software Development</h3>
+
+                  <p class="blog-text">
+                    The only windows and mac software development laptop guide you'll need!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="unityvr.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/vr.jpg" alt="How to Setup a Unity VR Project" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Code</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-06">Mar 06, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">How to Setup a Unity VR Project</h3>
+
+                  <p class="blog-text">
+                    Learn how to setup a Unity VR project in Editor version 2022.3.10f1.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24313.60838895982!2d-74.53595300993516!3d40.38223652246088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3db5e1ed34a15%3A0xdd1c1f3ae88eb8d3!2sDayton%2C%20South%20Brunswick%20Township%2C%20NJ!5e0!3m2!1sen!2sus!4v1719125792382!5m2!1sen!2sus"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/sinhaayush203@gmail.com" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
