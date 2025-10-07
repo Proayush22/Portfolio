@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Sinha - Personal Portfolio</title>
+
+    <!--
+        - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!--
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+        - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <aside class="sidebar" data-sidebar>
+
+                <div class="sidebar-info">
+        
+                <figure class="blog-box">
+                    <img src="./assets/images/webscrape.png" alt="Ayush Sinha" width="200">
+                </figure>
+        
+                <div class="info-content">
+                    <h1 class="name" title="Ayush Sinha">Author</h1>
+        
+                    
+                    <p class="title">Ayush Sinha <span class="static-title"></span></p>
+
+                </div>
+        
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+        
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+        
+                </div>
+        
+                <div class="sidebar-info_more">
+        
+                <div class="separator"></div>
+        
+                <ul class="contacts-list">
+        
+                    <li class="contact-item">
+        
+                    <div class="icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+        
+                    <div class="contact-info">
+                        <p class="contact-title">Email</p>
+        
+                        <a href="mailto:asinha@cloudcores.org" class="contact-link">asinha@cloudcores.org</a>
+                    </div>
+        
+                    </li>
+        
+                    <li class="contact-item">
+        
+                    <div class="icon-box">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+        
+                    <div class="contact-info">
+                        <p class="contact-title">Location</p>
+        
+                        <address>Dayton, New Jersey, USA</address>
+                    </div>
+        
+                    </li>
+        
+                </ul>
+        
+                <div class="separator"></div>
+        
+                <ul class="social-list">
+        
+                    <li class="social-item">
+                    <a href="https://github.com/Proayush22" class="social-link">
+                        <img src="./assets/images/github-mark-white.svg
+                        " alt="Github" height="20">
+                    </a>
+                    </li>
+                    
+                    <li class="social-item">
+                    <a href="https://open.spotify.com/user/e187imbz6qftt6l7gsukj1k1o?si=69c3746271614d47" class="social-link">
+                        <img src="./assets/images/spotify-icon.svg
+                        " alt="Spotify" height="20">
+                    </a>
+                    </li>
+        
+                    <li class="social-item">
+                    <a href="https://www.linkedin.com/in/ayush-si-nha/" class="social-link">
+                        <img src="./assets/images/LinkedIn_icon.svg" alt="Linkedin" height="20" width="20">
+                    </a>
+                    </li>
+        
+                    <li class="social-item">
+                    <a href="https://www.instagram.com/ayush.sin.22/" class="social-link">
+                        <img src="./assets/images/insta-icon.svg" alt="Instagram" height="20" width="20"> 
+                    </a>
+                    </li>
+        
+                </ul>
+        
+                </div>
+        
+            </aside>
+        
+        
+        
+        
+        
+            <!--
+                - #main-content
+            -->
+        
+            <div class="main-content">
+
+        
+                <!--
+                - #ABOUT
+                -->
+        
+                <article class="blog active" data-page="blog">
+        
+                <header>
+                    <h2 class="h2 article-title">How to Web Scrape Data using Python</h2>
+                </header>
+        
+                <section class="blog-content-text">
+                    <p>
+                        Web scraping is a technique to automatically access and extract large amounts of information from a website, which can save a huge amount of time and effort. In this article, we will go through an easy example of how to automate downloading hundreds of files from the New York MTA. This is a great exercise to learn about web scraping and to analyze the data. To begin webscraping in Python, you will need to have the following libraries installed: requests, BeautifulSoup, and Pandas. You can install these libraries using pip.
+                    </p>
+        
+                    <p>
+                        Step-by-Step Guide to Web Scraping
+                        <br>Let's scrape data from a sample website. For this example, we'll extract information from a hypothetical website listing books and their details.
+                        
+                        <br>1. Import the Required Libraries
+                        import requests
+                        from bs4 import BeautifulSoup
+                        import pandas as pd
+                        2. Send an HTTP Request
+                        First, we'll send an HTTP request to the website's server to retrieve the HTML content of the page.
+                        
+                        python
+                        Copy code
+                        url = 'http://example.com/books'
+                        response = requests.get(url)
+                        
+                        # Check if the request was successful
+                        if response.status_code == 200:
+                            page_content = response.content
+                        else:
+                            print("Failed to retrieve the webpage")
+                        3. Parse the HTML Content
+                        Next, we'll parse the HTML content using BeautifulSoup.
+                        
+                        python
+                        Copy code
+                        soup = BeautifulSoup(page_content, 'html.parser')
+                        4. Extract the Data
+                        We'll now locate the specific elements containing the data we want to extract. For this example, let's assume each book's details are within a <div> tag with the class book.
+                        
+                        python
+                        Copy code
+                        books = soup.find_all('div', class_='book')
+                        
+                        book_data = []
+                        
+                        for book in books:
+                            title = book.find('h2').text
+                            author = book.find('p', class_='author').text
+                            price = book.find('p', class_='price').text
+                            book_data.append({'Title': title, 'Author': author, 'Price': price})
+                        5. Store the Data
+                        Finally, we'll store the extracted data in a Pandas DataFrame and save it to a CSV file.
+                        
+                        python
+                        Copy code
+                        df = pd.DataFrame(book_data)
+                        df.to_csv('books.csv', index=False)
+                        Best Practices for Web Scraping
+                        Respect Robots.txt: Always check the website's robots.txt file to see if scraping is allowed. Respect the site's rules and avoid scraping if prohibited.
+                        Use Rate Limiting: Avoid sending too many requests in a short time to prevent overloading the server. Use time.sleep() to pause between requests.
+                        Handle Exceptions: Ensure your script can handle potential errors, such as network issues or changes in the website's structure.
+                        Be Ethical: Use web scraping responsibly. Avoid scraping personal data or any content that violates the website's terms of service.
+                        Conclusion
+                        Web scraping with Python is a valuable skill for data collection and analysis. By using libraries like Requests and BeautifulSoup, you can automate the process of extracting data from websites efficiently. Remember to follow best practices to ensure your web scraping activities are respectful and ethical.                </p>
+
+                    </section>
+
+                </article>
+            </div>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+
+    <footer>
+        <p>&copy; 2023 Ayush Sinha. All rights reserved.</p>
+    </footer>
+</html>

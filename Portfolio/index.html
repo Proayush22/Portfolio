@@ -1,12 +1,3 @@
-<!--
-
-
-Hit RUN to see this project in action!
-
-Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
-
-
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,12 +10,14 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/sig.png" type="image/x-icon">
 
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!--
     - google font link
@@ -50,13 +43,12 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
-          <img src="./assets/images/headshot.jpeg" alt="Ayush Sinha" width="80">
+        <figure class="avatar-box" href="#popup">
+          <img src="./assets/images/Ayush Sinha HeadShot.png" alt="Ayush Sinha" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Ayush Sinha">Ayush Sinha</h1>
-
           
           <p class="title">I'm <span class="static-title"></span></p>
 
@@ -70,10 +62,10 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <script>
             var typed = new Typed('.static-title', {
-              strings: [" a Developer", " a Researcher", " a Student"],
-              typeSpeed: 150,
-              backSpeed: 150,
-              loop: false
+              strings: [" a Student", " a Researcher", " a Developer", " an Entrepreneur"],
+              typeSpeed: 100,
+              backSpeed: 100,
+              loop: true
             });
           </script>
         </div>
@@ -99,9 +91,14 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title">Email (Buisness)</p>
 
               <a href="mailto:asinha@cloudcores.org" class="contact-link">asinha@cloudcores.org</a>
+
+              <p class="contact-title"><br>Email (Personal)</p>
+
+              <a href="mailto:sinhaayush203@gmail.com" class="contact-link">sinhaayush203@gmail.com</a>
+
             </div>
 
           </li>
@@ -143,7 +140,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Dayton, New Jersey, USA</address>
+              <address>New Jersey, USA</address>
             </div>
 
           </li>
@@ -156,15 +153,15 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <li class="social-item">
             <a href="https://github.com/Proayush22" class="social-link">
-              <img src="./assets/images/github-mark-white.svg
-                " alt="Github" height="20">
+              <img src="./assets/images/github-icon.svg
+                " alt="Github" height="24">
             </a>
           </li>
           
           <li class="social-item">
             <a href="https://open.spotify.com/user/e187imbz6qftt6l7gsukj1k1o?si=69c3746271614d47" class="social-link">
               <img src="./assets/images/spotify-icon.svg
-                " alt="Spotify" height="20">
+                " alt="Spotify" height="20" width="20">
             </a>
           </li>
 
@@ -217,10 +214,6 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -236,7 +229,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -244,14 +237,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
         <section class="about-text">
           <p>
-            I'm Computer Sceince Student from Dayton, New Jersey, reserching in XR Technologies and Data Science/Machine Learning.
-            I also have experience with game design (Unity), App Developemnt (Flutter & Android Studio) and Web Development (HTML, CSS, JS).
-          </p>
+            A true technology fanatic, Ayush is a leader of technological innovations and solutions. With his strong technical vision and a passion for research, he stays updated with the latest technology practices and leverage business operations to new platforms. He applies his entrepreneurial expertise with technical knowledge to deliver advanced digital services that drive the success of startups and empower underrepresented communities. In addition to his technical pursuits, Ayush is a varsity track and field athlete, balancing his work with an active lifestyle. In his free time, he enjoys playing chess and basketball, reflecting his drive for both personal and professional excellence.          </p>
 
           <p>
-            I am the founder of a software development startup, CloudCores, where we create projects and help clients with a significant 
-            impact on our community. We develop websites that are functional, user-friendly, and visually appealing. We also design mobile 
-            applications that are easy to use and have a clean interface. Our goal is to create an equitable future for all companies.
+            Ayush is the founder of a software development startup, CloudCores, and YouthCapitals, a comapny creating revolutionary venture capitalism technology. These companies delve into research, public welfare projects, helping clients, and offering internships/mentorship to students in underserved communities. Ayush specializes in groundbreaking research, innovative machine learning solutions, creating websites that are functional, user-friendly, and visually appealing, and mobile 
+            applications that are easy to use and have a clean interface. His goal is the same for students and clients alike: creating a more equitable future.
           </p>
         </section>
 
@@ -275,10 +265,10 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">VR/AR Development</h4>
+                <h4 class="h4 service-item-title">XR, Game Development</h4>
 
                 <p class="service-item-text">
-                  Advanced Unity knowledge and experience in Unity XR Development.
+                  Professional experience in Unity Development and XR Research.
                 </p>
               </div>
 
@@ -326,7 +316,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                 <h4 class="h4 service-item-title">Machine Learning</h4>
 
                 <p class="service-item-text">
-                  Data Science and Machine Learning Researcher and Project Lead
+                  Leader in machine learning research and app intergration.
                 </p>
               </div>
 
@@ -555,29 +545,41 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <ul class="clients-list has-scrollbar">
 
-            <li class="clients-item">
-              <a href="https://cloudcores.org/" target="_blank" class="clients-link"">
-                <img src="./assets/images/transcloudcores.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://research.njit.edu/" target="_blank"">
-                <img src="./assets/images/njit.png" alt="client logo">
-              </a>
-            </li>
-
+            
             <li class="clients-item">
               <a href="https://www.researchwithrutgers.com/">
                 <img src="./assets/images/ruttys.png" alt="client logo">
               </a>
             </li>
+            
 
+            <li class="clients-item">
+              <a href="https://cloudcores.org/" target="_blank" class="clients-link">
+                <img src="./assets/images/transcloudcores.png" alt="client logo">
+              </a>
+            </li>
+
+            <!--
+            <li class="clients-item">
+              <a href="https://youthcapitals.com/" target="_blank" class="clients-link">
+                <img src="./assets/images/white.png" alt="client logo">
+              </a>
+            </li>
+          -->
+
+            <li class="clients-item">
+              <a href="https://research.njit.edu/" target="_blank">
+                <img src="./assets/images/njit.png" alt="client logo">
+              </a>
+            </li>
+          
+            <!--
             <li class="clients-item">
               <a href="https://www.iwanciw.com/">
                 <img src="./assets/images/iwanciw.png" alt="client logo">
               </a>
             </li>
+          -->
 
             <li class="clients-item">
               <a href="https://www.ussoccer.com/">
@@ -585,11 +587,13 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               </a>
             </li>
 
+            <!--
             <li class="clients-item">
               <a href="https://www.myflevel.com/US/center/plainsboro">
                 <img src="./assets/images/eyelevel.png" alt="client logo">
               </a>
             </li>
+          -->
 
           </ul>
 
@@ -625,13 +629,28 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Rutgers University - New Brunswick</h4>
+              <h4 class="h5 timeline-text">Computer Science</h4>
+              <span>2025 - 2027</span>
+
+              <p class="timeline-text">
+                <b>Participated in</b> Rutgers Formula Racing, <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">South Brunswick High School</h4>
 
               <span>2021 - 2025</span>
 
               <p class="timeline-text">
-                Participated in National Honors Society, Winter and Spring Varsity Track & Field, JSA VLA Rep, CS Academy, FBLA, and Computer Science Club <br>
-                Relevant Coursework: AP Computer Science A, AP Calculus AB, AP Chemistry, Mobile Application Development, Virtual Reality and Game Design, AP Physics C, AP Statistics
+                <!--
+                <b>GPA:</b> W 4.28/4.0, UW 3.74/4.0 <br>
+              -->
+                <b>Participated </b>in National Honors Society, Winter and Spring Track & Field, JSA VLA Rep (MAS Gov DOT), CS Academy, FBLA, and Computer Science Club <br>
+                <b>Relevant Coursework: </b>AP Computer Science A, AP Calculus AB/BC, AP Chemistry, Mobile Application Development, Virtual Reality and Game Design, AP Physics C, AP Statistics, AP Macroeconomics, Data Structures & Algorithms, CS Academy Capstone, AP Psychology
               </p>
 
             </li>
@@ -653,56 +672,29 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
           <ol class="timeline-list">
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">CloudCores - CTO/Co-Founder</h4>
+              <h4 class="h4 timeline-item-title">CloudCores - Co-Founder</h4>
 
               <span>2024 - Present</span>
 
               <p class="timeline-text">
-                Created CloudCores, a software development startup dedicated to creating projects and helping clients with a significant impact on our community - whether it be something as simple as creating websites for local businesses, or designing a free ACT course for students across the country - we’re creating an equitable future.
-              </p>
-
-            </li>
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">JSA MAS Gubernatorial Director of Technology</h4>
-
-              <span>July 2024 - Present</span>
-
-              <p class="timeline-text">
-                Junior State of America (JSA) is an organized debate club consisting of debates at the school, regional, state, and national levels. Managed the virtual platform by developing a robust web application and documenting event photos as Director of Technology for the Gubernatorial Cabinet on JSA's Mid-Atlantic State level.
-
-              </p>
-
-            </li>
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">NJIT Researcher (HSSRI Program)</h4>
-
-              <span>June 2024 - July 2024</span>
-
-              <p class="timeline-text">
-                Participated in a competitive high school summer research program under Professor Vinnikov, researching XR technology and object identification. Created an application in Unity using AR technology that recognizes specific tools and uses a 3D Scanner to scan the user's area and creates a model. 
-
+                Created CloudCores, a software development startup dedicated to creating projects and helping clients with end results in mind. We create websites, mobile apps, do research, and implement database solutions at affordable prices. Backed by Lehigh University's Baker Institiure for Entreprenurship
               </p>
 
             </li>
 
-            
-
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Iwanciw Lead Unity Developer Intern</h4>
+              <h4 class="h4 timeline-item-title">NJIT HSSRI Summer Researcher - MiXR Lab</h4>
 
               <span>June 2024 - August 2024</span>
 
               <p class="timeline-text">
-                Updated the companies SWCE (Color expereince) project to implement it in Unity where I created a 3D model of the company's product and implemented a color changing feature. Created a VR experience for the company's product using Unity and Oculus Quest 2.
+                Participated in a competitive high school summer research program (HSSRI) under Professor Vinnikov, researching XR technology and object identification, while working with 3D models using Blender and web scraping using Beautiful Soup.
+
               </p>
 
             </li>
-            
+
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Sports Referee - NJ</h4>
@@ -715,18 +707,37 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
             </li>
 
+            <!--
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Rutgers University Data Science Researcher - New Brunswick, NJ</h4>
+              <h4 class="h4 timeline-item-title">Apex Games - Game/Blockchain Development Intern</h4>
+
+              <span>June 2024 - August 2024</span>
+
+              
+              <p class="timeline-text">
+                Worked on implementing blockchain, NFT, and multiplayer features in Unity to create a more immersive and enjoyable experience for users and promote cryptocurrency. Helped develop APEX token, a coin made specificailly for the companies game. 
+              </p>
+              
+              <p class="timeline-text">
+                Helped with creation of APEX token & integration into Unity multiplayer game in the form of NFT reward system. 
+              </p>
+
+            </li>
+            
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Iwanciw Functional Funware - React Development Intern</h4>
 
               <span>June 2023 - August 2023</span>
 
               <p class="timeline-text">
-                Worked under Professor Govindasamy to process economic data about food security issues in Micronesia. 
-              </p>
+                Worked in a small team to help create a new website using HTML, CSS, JS & SYCE (See your color experience) web page using React               </p>
 
             </li>
-
+          -->
 
             <li class="timeline-item">
 
@@ -750,6 +761,108 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <div class="title-wrapper">
             <div class="icon-box">
+              <ion-icon name="medal-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Awards / Honors / Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lehigh University Baker Institute Eureka! Pitch Night & Startup of the Year</h4>
+
+              <span>Sep 2024, Oct 2024</span>
+
+              <p class="timeline-text">
+                Won for CloudCores & YouthCapitals, $1500/month venture program funding
+              </p>
+
+            </li>
+
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">News Appearances</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Appeared on MY9NJ, FOX5, TAPinto, Patch, ShoutoutDFW, and other news outlets for work in CloudCores and YouthCapitals
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">On Abbott Distrcits and Public Welfare Indpendent Research</h4>
+
+              <span>Dec 2023 - July 2024</span>
+
+              <p class="timeline-text">
+                Conducted labor market analysis w/ US Census data & MLR, KNN, and Random Forest to predict economic trends; proposed plans for career dev.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Indpendent Research in Optimizing Spread Options Trading</h4>
+
+              <span>July 2024 - September 2024</span>
+
+              <p class="timeline-text">
+                Using Deep Deterministic Policy Gradient we determine the optimal
+trading strategy; Publishing @ IJARESM (Impact Factor of 8.536)
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">The Global Health Leaders Conference at Johns Hopkins University</h4>
+
+              <span>July 2024</span>
+
+              <p class="timeline-text">
+                Participant in a competitive Johns Hopkins program (9.3% Official Acceptance Rate) with other students and researchers/professors in the industry.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3x JSA Best Speaker Award, 2023 Winter Congress Bill Passed Award</h4>
+
+              <span>2021 - 2025</span>
+
+              <p class="timeline-text">
+                Nominated Best Speaker three times throughout my high school JSA career at international and reigional/state level JSA debate competitions. Successfully passed a bill through a each round of a mock Congress by speaking in front of each house and commitee.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">2x PVSA Gold (Presidential Volunteer Service Award), Congressional Gold Award</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Volunteered over 250 hours at certified non-profit organizations
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
               <ion-icon name="people-outline"></ion-icon>
             </div>
 
@@ -758,23 +871,53 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <ol class="timeline-list">
 
+            
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">The Global Health Leaders Conference at Johns Hopkins University</h4>
+              <h4 class="h4 timeline-item-title">JSA MAS Gubernatorial Director of Technology</h4>
 
-              <span>July 2024</span>
+              <span>July 2024 - Present</span>
 
               <p class="timeline-text">
-                Participant in a competitive Johns Hopkins program with students from all around the world, The Global Health Leaders Conference, where I attended a series of events with other students and researchers/professors in the industry.
+                Junior State of America (JSA) is an organized debate club consisting of debates at the school, regional, state, and national levels. Chosen by MAS leaders (1 of 17 Gov Cab/200+ applicants, 1 of 2 Gov DOT). Documented photos & leading web dev. team for National & MAS regional site.
+
+              </p>
+
+            </li>
+            
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">YouthCapitals, AppAdmit, AceACT - Co-Founder</h4>
+
+              <span>2024 - Present</span>
+
+              <p class="timeline-text">
+                Sponsor for non-profits/minority-owned businesses; Created an AI Automa model to autmate venture capitalist processes; Created AceACT, the 1st free ACT course & AppAdmit, a completely free college newsletter. Won Lehigh University's Baker Institute Eureka! Pitch Night ($1500/month venture program funding).
               </p>
 
             </li>
 
+            <!--
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Machine Learning Lead</h4>
+              <h4 class="h4 timeline-item-title">Rutgers University Data Science Researcher - New Brunswick, NJ</h4>
 
-              <span>April 2023 - Present</span>
+              <span>June 2023 - August 2023</span>
+
+              <p class="timeline-text">
+                Worked under Professor Govindasamy (Chair of Food, Resource and Agricultural Economics) to process economic data about food security issues in Micronesia. Used Data Science and Statistics techniques to analyze the data and create a logistic regression model with economometrics that predicts future food security issues in Micronesia.
+              </p>
+
+            </li>
+
+            -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Code4Tomorrow - Machine Learning Lead (Non-Profit)</h4>
+
+              <span>April 2023 - July 2024</span>
 
               <p class="timeline-text">
                 Lead of the Machine Learning Classes department; manage members of the Machine Learning team and offer insight on additions to course content. Contributed to the machine learning course content and taught Intermediate Java and Web development classes during the summer.
@@ -808,11 +951,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
               <div class="title-wrapper">
                 <h5 class="h5">Web Development</h5>
-                <data value="70">70%</data>
+                <data value="70">80%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
 
             </li>
@@ -821,11 +964,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
               <div class="title-wrapper">
                 <h5 class="h5">Unity</h5>
-                <data value="80">80%</data>
+                <data value="80">75%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <div class="skill-progress-fill" style="width: 75%;"></div>
               </div>
 
             </li>
@@ -847,11 +990,11 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
               <div class="title-wrapper">
                 <h5 class="h5">Machine Learning</h5>
-                <data value="50">50%</data>
+                <data value="50">70%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
               </div>
 
             </li>
@@ -947,7 +1090,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Concept Laptop</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Website</p>
 
               </a>
             </li>
@@ -960,12 +1103,12 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/cldcrs.png" alt="orizon" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Cloud Cores</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Website</p>
 
               </a>
             </li>
@@ -983,7 +1126,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Music Party App</h3>
 
-                <p class="project-category">Mobile Apps</p>
+                <p class="project-category">Mobile App</p>
 
               </a>
             </li>
@@ -999,9 +1142,9 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
                   <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Student Search</h3>
+                <h3 class="project-title">CollegeCo</h3>
 
-                <p class="project-category">Mobile Apps</p>
+                <p class="project-category">Mobile App</p>
 
               </a>
             </li>
@@ -1019,7 +1162,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Laser Tag</h3>
 
-                <p class="project-category">Games</p>
+                <p class="project-category">Virtual Reality</p>
 
               </a>
             </li>
@@ -1037,7 +1180,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Multi-Brawl</h3>
 
-                <p class="project-category">Games</p>
+                <p class="project-category">Multiplayer Game</p>
 
               </a>
             </li>
@@ -1073,7 +1216,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Fruit Ninja VR</h3>
 
-                <p class="project-category">Games</p>
+                <p class="project-category">Virtual Reality</p>
 
               </a>
             </li>
@@ -1091,7 +1234,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Calculator App</h3>
 
-                <p class="project-category">Mobile Apps</p>
+                <p class="project-category">Mobile App</p>
 
               </a>
             </li>
@@ -1109,7 +1252,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Oreo Clicker</h3>
 
-                <p class="project-category">Mobile Apps</p>
+                <p class="project-category">Mobile App</p>
 
               </a>
             </li>
@@ -1127,7 +1270,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
                 <h3 class="project-title">Location App</h3>
 
-                <p class="project-category">Mobile Apps</p>
+                <p class="project-category">Mobile App</p>
 
               </a>
             </li>
@@ -1157,26 +1300,26 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="webscrape.html">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/webscrape.png" alt="How to Webscrape Data in Python" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Code</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-06-25">Jun 25, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">How to Web Scrape Data using Python</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Simple web scraping tutorial using Python and BeautifulSoup.
                   </p>
 
                 </div>
@@ -1185,26 +1328,26 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="laptops.html">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/laptop.avif" alt="The Best Laptops for Software Development" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Technology</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-06-15">Jun 15, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">The Best Laptops for Software Development</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    The only windows and mac software development laptop guide you'll need!
                   </p>
 
                 </div>
@@ -1213,110 +1356,26 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="unityvr.html">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/vr.jpg" alt="How to Setup a Unity VR Project" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Code</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2024-03-06">Mar 06, 2024</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">How to Setup a Unity VR Project</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    Learn how to setup a Unity VR project in Editor version 2022.3.10f1.
                   </p>
 
                 </div>
@@ -1356,7 +1415,7 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formsubmit.co/sinhaayush203@gmail.com" class="form" data-form>
+          <form action="https://formsubmit.co/sinhaayush203@gmail.com" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1396,6 +1455,8 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./index.js"></script>
 
 </body>
 
